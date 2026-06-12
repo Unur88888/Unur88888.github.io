@@ -9,233 +9,236 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-    :root {
-        --bg-main: #ffffff;
-        --bg-soft: #fafafa;
-        --bg-quote: #f4f8ff;
-        --border-soft: #e5e5e5;
+/* ——— ROOT COLORS ——— */
+:root {
+    --bg-main: #ffffff;
+    --bg-soft: #fafafa;
+    --bg-quote: #f4f8ff;
+    --border-soft: #e5e5e5;
 
-        --prog: #003366;
-        --viz: #006b8f;
-        --cloud: #1e88e5;
-        --etl: #3949ab;
-        --design: #546e7a;
+    --prog: #003366;
+    --viz: #006b8f;
+    --cloud: #1e88e5;
+    --etl: #3949ab;
+    --design: #546e7a;
 
-        --accent: #003366;
-        --accent-light: #0055aa;
-        --text-main: #222222;
-        --text-muted: #555555;
-    }
+    --accent: #003366;
+    --accent-light: #0055aa;
+    --text-main: #222222;
+    --text-muted: #555555;
+}
 
-    * { box-sizing: border-box; }
+/* ——— GLOBAL ——— */
+* { box-sizing: border-box; }
 
-    body {
-        margin: 0;
-        font-family: "Inter", sans-serif;
-        background: var(--bg-main);
-        color: var(--text-main);
-        line-height: 1.85;
-        font-size: 17px;
-        text-align: justify;
-    }
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.85;
+    font-size: 17px;
+    text-align: justify;
+}
 
-    nav {
-        display: flex;
-        justify-content: flex-end;
-        gap: 32px;
-        padding: 18px 48px;
-        border-bottom: 1px solid var(--border-soft);
-        background: var(--bg-main);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
-    nav a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        font-size: 16px;
-    }
-    nav a:hover { color: var(--accent-light); }
+/* ——— NAVIGATION ——— */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 32px;
+    padding: 18px 48px;
+    border-bottom: 1px solid var(--border-soft);
+    background: var(--bg-main);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+}
+nav a:hover { color: var(--accent-light); }
 
-    .wrapper {
-        max-width: 1180px;
-        margin: 0 auto;
-        padding: 40px 28px 80px;
-    }
+/* ——— WRAPPER ——— */
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 28px 80px;
+}
 
-    .hero {
-        text-align: center;
-        margin-bottom: 55px;
-    }
-    .hero img {
-        width: 190px;
-        height: 190px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 18px;
-        border: 2px solid #ddd;
-    }
-    .hero h1 {
-        font-size: 40px;
-        margin: 8px 0 6px;
-        font-weight: 600;
-        color: var(--accent);
-    }
-    .hero p {
-        margin: 4px 0;
-        color: var(--text-muted);
-        font-size: 17px;
-    }
+/* ——— HERO ——— */
+.hero {
+    text-align: center;
+    margin-bottom: 55px;
+}
+.hero img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: 2px solid #ddd;
+}
+.hero h1 {
+    font-size: 40px;
+    margin: 8px 0 6px;
+    font-weight: 600;
+    color: var(--accent);
+}
+.hero p {
+    margin: 4px 0;
+    color: var(--text-muted);
+    font-size: 17px;
+}
 
-    h2 {
-        font-size: 30px;
-        margin-top: 55px;
-        margin-bottom: 18px;
-        font-weight: 600;
-        border-bottom: 1px solid var(--border-soft);
-        padding-bottom: 6px;
-        color: var(--accent);
-    }
+/* ——— HEADERS ——— */
+h2 {
+    font-size: 30px;
+    margin-top: 55px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-soft);
+    padding-bottom: 6px;
+    color: var(--accent);
+}
 
-    .info-table {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 10px 24px;
-        margin-bottom: 20px;
-        font-size: 16px;
-    }
+/* ——— EDUCATION TABLE ——— */
+.info-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px 24px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
 
-    .skills-section {
-        background: linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
-        padding: 40px 32px;
-        border-radius: 14px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+/* ——— SKILLS ——— */
+.skills-section {
+    background: linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
+    padding: 40px 32px;
+    border-radius: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+.skill-block {
+    border: 1px solid var(--border-soft);
+    border-left: 6px solid var(--accent);
+    border-radius: 12px;
+    padding: 26px 26px 30px;
+    background: #ffffff;
+    font-size: 16px;
+    transition: 0.25s ease;
+}
+.skill-block:hover {
+    background: #f2f7ff;
+    transform: translateX(4px);
+}
+.icon-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.icon-circle svg {
+    width: 22px;
+    height: 22px;
+    stroke-width: 2;
+    stroke: var(--accent);
+}
 
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 22px;
-    }
+/* ——— PROJECT CARDS ——— */
+.project-card {
+    border: 1px solid var(--border-soft);
+    border-radius: 14px;
+    padding: 34px 34px 42px;
+    margin-bottom: 45px;
+    background: #ffffff;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+    transition: 0.25s ease;
+}
+.project-card:hover {
+    box-shadow: 0px 10px 26px rgba(0,0,0,0.14);
+    transform: translateY(-4px);
+}
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+.project-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #eef4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--accent);
+    stroke-width: 2;
+}
+.project-card h3 {
+    margin: 0;
+    font-size: 26px;
+    color: var(--accent);
+    font-weight: 600;
+}
+.project-meta {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 14px;
+    font-style: italic;
+}
+.skill-tags { margin-bottom: 18px; }
+.tag {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 13px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+.fig-grid {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.fig-grid img {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.18);
+}
 
-    .skill-block {
-        border: 1px solid var(--border-soft);
-        border-left: 6px solid var(--accent);
-        border-radius: 12px;
-        padding: 26px 26px 30px;
-        background: #ffffff;
-        font-size: 16px;
-        transition: 0.25s ease;
-    }
-    .skill-block:hover {
-        background: #f2f7ff;
-        transform: translateX(4px);
-    }
-
-    .icon-circle {
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        background: rgba(0,0,0,0.06);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 12px;
-    }
-    .icon-circle svg {
-        width: 22px;
-        height: 22px;
-        stroke-width: 2;
-        stroke: var(--accent);
-    }
-
-    .prog { border-left-color: var(--prog); }
-    .viz { border-left-color: var(--viz); }
-    .cloud { border-left-color: var(--cloud); }
-    .etl { border-left-color: var(--etl); }
-    .design { border-left-color: var(--design); }
-
-    .project-card {
-        border: 1px solid var(--border-soft);
-        border-radius: 14px;
-        padding: 34px 34px 42px;
-        margin-bottom: 45px;
-        background: #ffffff;
-        box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
-        transition: 0.25s ease;
-    }
-    .project-card:hover {
-        box-shadow: 0px 10px 26px rgba(0,0,0,0.14);
-        transform: translateY(-4px);
-    }
-
-    .project-header {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        margin-bottom: 12px;
-    }
-
-    .project-icon {
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        background: #eef4ff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .project-icon svg {
-        width: 24px;
-        height: 24px;
-        stroke: var(--accent);
-        stroke-width: 2;
-    }
-
-    .project-card h3 {
-        margin: 0;
-        font-size: 26px;
-        color: var(--accent);
-        font-weight: 600;
-    }
-
-    .project-meta {
-        font-size: 16px;
-        color: #666;
-        margin-bottom: 14px;
-        font-style: italic;
-    }
-
-    .skill-tags { margin-bottom: 18px; }
-    .tag {
-        display: inline-block;
-        background: var(--accent);
-        color: white;
-        font-size: 13px;
-        padding: 5px 12px;
-        border-radius: 999px;
-        margin-right: 6px;
-        margin-top: 6px;
-    }
-
-    .fig-grid {
-        display: flex;
-        gap: 22px;
-        justify-content: center;
-        margin-top: 30px;
-        flex-wrap: wrap;
-    }
-    .fig-grid img {
-        width: 100%;
-        max-width: 350px;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 10px;
-        border: 1px solid #ddd;
-        box-shadow: 0px 4px 14px rgba(0,0,0,0.18);
-    }
+/* ——— CONTACT ——— */
+.contact-icon {
+    width: 22px;
+    height: 22px;
+    stroke: var(--accent);
+    margin-right: 8px;
+    vertical-align: middle;
+}
 </style>
 </head>
 
@@ -252,99 +255,109 @@
 
 <div class="wrapper">
 
-    <div class="hero">
-        <img src="images/yourphoto.png" alt="Unur Gantulga">
-        <h1>Unur Gantulga</h1>
-        <p>MS in Applied Data Science • Syracuse University, iSchool</p>
-        <p>Applied Data Science Portfolio • May 2026</p>
-    </div>
+<!-- ——— HERO ——— -->
+<div class="hero">
+    <img src="images/yourphoto.png" alt="Unur Gantulga">
+    <h1>Unur Gantulga</h1>
+    <p>MS in Applied Data Science • Syracuse University, iSchool</p>
+    <p>Applied Data Science Portfolio • May 2026</p>
+</div>
 
-    <h2 id="intro">Introduction / Personal Statement</h2>
-    <p>
-        I’m a graduate student in Syracuse University’s MS in Applied Data Science program at the iSchool. My work spans Python and SQL, dbt transformation modeling, NoSQL storage, and machine learning classification. I’m pursuing data engineering or analytics engineering roles where I can build reliable pipelines, clean data models, and reporting layers that support real decision‑making across teams and evolving business needs.
-    </p>
+<!-- ——— INTRO ——— -->
+<h2 id="intro">Introduction / Personal Statement</h2>
+<p>
+    I’m a graduate student in Syracuse University’s MS in Applied Data Science program at the iSchool. My work spans Python and SQL, dbt transformation modeling, NoSQL storage, and machine learning classification. I’m pursuing data engineering or analytics engineering roles where I can build reliable pipelines, clean data models, and reporting layers that support real decision‑making across teams and evolving business needs.
+</p>
 
-    <h2 id="education">Education</h2>
-    <div class="info-table">
-        <div><strong>Degree:</strong> MS in Applied Data Science</div>
-        <div><strong>Institution:</strong> Syracuse University, iSchool</div>
-        <div><strong>Expected Graduation:</strong> May 2026</div>
-        <div><strong>Relevant Coursework:</strong> IST652, IST707, IST722, IST769</div>
-    </div>
+<!-- ——— EDUCATION (ENHANCED) ——— -->
+<h2 id="education">Education</h2>
+<div class="info-table">
+    <div><strong>Degree:</strong> Master of Science in Applied Data Science</div>
+    <div><strong>Institution:</strong> Syracuse University, School of Information Studies (iSchool)</div>
+    <div><strong>Expected Graduation:</strong> May 2026</div>
+    <div><strong>Relevant Coursework:</strong> Scripting for Data Analysis, Applied Machine Learning, Data Warehouse, Advanced Big Data Management</div>
+</div>
 
-    <div class="skills-section">
-        <h2 id="skills">Technical Skills</h2>
+<p style="margin-top: 10px; color: var(--text-muted);">
+    My graduate work emphasized end‑to‑end data engineering, analytical modeling, and scalable storage design. Across the curriculum, I focused on building pipelines, dimensional models, and machine learning workflows that support real‑world reporting and operational needs.
+</p>
 
-        <div class="skills-grid">
+<!-- ——— SKILLS ——— -->
+<div class="skills-section">
+    <h2 id="skills">Technical Skills</h2>
 
-            <div class="skill-block prog">
-                <div class="icon-circle">
-                    <svg fill="none" stroke="var(--prog)" viewBox="0 0 24 24">
-                        <polyline points="16 18 22 12 16 6"></polyline>
-                        <polyline points="8 6 2 12 8 18"></polyline>
-                    </svg>
-                </div>
-                <strong>Programming</strong><br>
-                Python (pandas, NumPy, scikit‑learn), SQL (analytical queries, joins, optimization)
+    <div class="skills-grid">
+
+        <div class="skill-block prog">
+            <div class="icon-circle">
+                <svg fill="none" stroke="var(--prog)" viewBox="0 0 24 24">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
             </div>
-
-            <div class="skill-block viz">
-                <div class="icon-circle">
-                    <svg fill="none" stroke="var(--viz)" viewBox="0 0 24 24">
-                        <line x1="12" y1="20" x2="12" y2="10"></line>
-                        <line x1="18" y1="20" x2="18" y2="4"></line>
-                        <line x1="6" y1="20" x2="6" y2="16"></line>
-                    </svg>
-                </div>
-                <strong>Visualization</strong><br>
-                Tableau & Power BI dashboards, DAX, interactive reporting, KPI design
-            </div>
-
-            <div class="skill-block cloud">
-                <div class="icon-circle">
-                    <svg fill="none" stroke="var(--cloud)" viewBox="0 0 24 24">
-                        <path d="M20 17.58A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 4 16.25"></path>
-                    </svg>
-                </div>
-                <strong>Cloud & Warehousing</strong><br>
-                AWS (S3, Glue), Snowflake, Microsoft Fabric
-            </div>
-
-            <div class="skill-block etl">
-                <div class="icon-circle">
-                    <svg fill="none" stroke="var(--etl)" viewBox="0 0 24 24">
-                        <line x1="4" y1="21" x2="4" y2="14"></line>
-                        <line x1="4" y1="10" x2="4" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="12"></line>
-                        <line x1="12" y1="8" x2="12" y2="3"></line>
-                        <line x1="20" y1="21" x2="20" y2="16"></line>
-                        <line x1="20" y1="12" x2="20" y2="3"></line>
-                        <line x1="1" y1="14" x2="7" y2="14"></line>
-                        <line x1="9" y1="8" x2="15" y2="8"></line>
-                        <line x1="17" y1="16" x2="23" y2="16"></line>
-                    </svg>
-                </div>
-                <strong>ETL / Data Engineering</strong><br>
-                dbt modeling, SSIS pipelines, data quality checks, schema design
-            </div>
-
-            <div class="skill-block design">
-                <div class="icon-circle">
-                    <svg fill="none" stroke="var(--design)" viewBox="0 0 24 24">
-                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                        <path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
-                        <path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"></path>
-                    </svg>
-                </div>
-                <strong>Data Design</strong><br>
-                Dimensional modeling, data governance, BI layer design
-            </div>
-
+            <strong>Programming</strong><br>
+            Python (pandas, NumPy, scikit‑learn), SQL (analytical queries, joins, optimization)
         </div>
-    </div>
 
-    <h2 id="projects">Projects</h2>
-<!-- PROJECT 1 -->
+        <div class="skill-block viz">
+            <div class="icon-circle">
+                <svg fill="none" stroke="var(--viz)" viewBox="0 0 24 24">
+                    <line x1="12" y1="20" x2="12" y2="10"></line>
+                    <line x1="18" y1="20" x2="18" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="16"></line>
+                </svg>
+            </div>
+            <strong>Visualization</strong><br>
+            Tableau & Power BI dashboards, DAX, interactive reporting, KPI design
+        </div>
+
+        <div class="skill-block cloud">
+            <div class="icon-circle">
+                <svg fill="none" stroke="var(--cloud)" viewBox="0 0 24 24">
+                    <path d="M20 17.58A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 4 16.25"></path>
+                </svg>
+            </div>
+            <strong>Cloud & Warehousing</strong><br>
+            AWS (S3, Glue), Snowflake, Microsoft Fabric
+        </div>
+
+        <div class="skill-block etl">
+            <div class="icon-circle">
+                <svg fill="none" stroke="var(--etl)" viewBox="0 0 24 24">
+                    <line x1="4" y1="21" x2="4" y2="14"></line>
+                    <line x1="4" y1="10" x2="4" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12" y2="3"></line>
+                    <line x1="20" y1="21" x2="20" y2="16"></line>
+                    <line x1="20" y1="12" x2="20" y2="3"></line>
+                    <line x1="1" y1="14" x2="7" y2="14"></line>
+                    <line x1="9" y1="8" x2="15" y2="8"></line>
+                    <line x1="17" y1="16" x2="23" y2="16"></line>
+                </svg>
+            </div>
+            <strong>ETL / Data Engineering</strong><br>
+            dbt modeling, SSIS pipelines, data quality checks, schema design
+        </div>
+
+        <div class="skill-block design">
+            <div class="icon-circle">
+                <svg fill="none" stroke="var(--design)" viewBox="0 0 24 24">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+                    <path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"></path>
+                </svg>
+            </div>
+            <strong>Data Design</strong><br>
+            Dimensional modeling, data governance, BI layer design
+        </div>
+
+    </div>
+</div>
+
+<!-- ——— PROJECTS ——— -->
+<h2 id="projects">Projects</h2>
+
+<!-- ——— PROJECT 1 ——— -->
 <div class="project-card">
     <div class="project-header">
         <div class="project-icon">
@@ -376,7 +389,7 @@
     </div>
 </div>
 
-<!-- PROJECT 2 -->
+<!-- ——— PROJECT 2 ——— -->
 <div class="project-card">
     <div class="project-header">
         <div class="project-icon">
@@ -400,7 +413,8 @@
     </div>
 
     <p>
-        I worked on a text‑classification pipeline that analyzed student explanations of math problems and assigned them to one of 35 misconception categories. I built the preprocessing and TF‑IDF vectorization steps, then trained a hybrid ensemble using Logistic Regression and Linear SVM to handle the wide variation in writing styles and class imbalance across categories. Alongside the supervised model, I implemented an LDA workflow to uncover latent themes without relying on labels, comparing how well the discovered clusters aligned with known misconception patterns. The supervised model performed strongly on well‑represented categories, while LDA revealed interpretable reasoning patterns that accuracy alone didn’t capture. This project sharpened my understanding of evaluating NLP models in contexts where interpretability matters as much as predictive performance.
+        I worked on a text‑classification pipeline that analyzed student explanations of math problems and assigned them to one of 35 misconception categories. I built the preprocessing and TF‑IDF vectorization steps, then trained a hybrid ensemble using Logistic Regression and Linear SVM to handle the wide variation in writing styles and class imbalance across categories. Alongside the supervised model, I implemented an LDA workflow to uncover latent themes
+                without relying on labels, comparing how well the discovered clusters aligned with known misconception patterns. The supervised model performed strongly on well‑represented categories, while LDA revealed interpretable reasoning patterns that accuracy alone didn’t capture. This project sharpened my understanding of evaluating NLP models in contexts where interpretability matters as much as predictive performance.
     </p>
 
     <div class="fig-grid">
@@ -409,6 +423,7 @@
         <div><img src="images/fig6.png" alt=""></div>
     </div>
 </div>
+
 <!-- PROJECT 3 -->
 <div class="project-card">
     <div class="project-header">
