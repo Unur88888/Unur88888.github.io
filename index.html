@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Unur Gantulga | Applied Data Science Portfolio</title>
 
-<!-- Google Font: Inter -->
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -24,20 +24,18 @@
 
     --accent: #003366;
     --accent-light: #0055aa;
-    --text-main: #222222;
-    --text-muted: #555555;
+    --text-main: #222;
+    --text-muted: #555;
 }
 
 /* ——— GLOBAL ——— */
-* { box-sizing: border-box; }
-
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
     background: var(--bg-main);
     color: var(--text-main);
-    line-height: 1.85;
-    font-size: 17px;
+    line-height: 1.75;
+    font-size: 14px;
     text-align: justify;
 }
 
@@ -45,8 +43,8 @@ body {
 nav {
     display: flex;
     justify-content: flex-end;
-    gap: 32px;
-    padding: 18px 48px;
+    gap: 28px;
+    padding: 16px 42px;
     border-bottom: 1px solid var(--border-soft);
     background: var(--bg-main);
     position: sticky;
@@ -57,7 +55,7 @@ nav a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
 }
 nav a:hover { color: var(--accent-light); }
 
@@ -65,89 +63,89 @@ nav a:hover { color: var(--accent-light); }
 .wrapper {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 40px 28px 80px;
+    padding: 36px 26px 70px;
 }
 
 /* ——— HERO ——— */
 .hero {
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
 }
 .hero img {
-    width: 190px;
-    height: 190px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     border: 2px solid #ddd;
 }
 .hero h1 {
-    font-size: 40px;
-    margin: 8px 0 6px;
+    font-size: 34px;
+    margin: 6px 0 4px;
     font-weight: 600;
     color: var(--accent);
 }
 .hero p {
-    margin: 4px 0;
+    margin: 2px 0;
     color: var(--text-muted);
-    font-size: 17px;
+    font-size: 15px;
 }
 
 /* ——— HEADERS ——— */
 h2 {
-    font-size: 30px;
-    margin-top: 55px;
-    margin-bottom: 18px;
+    font-size: 26px;
+    margin-top: 45px;
+    margin-bottom: 14px;
     font-weight: 600;
     border-bottom: 1px solid var(--border-soft);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     color: var(--accent);
 }
 
-/* ——— SKILLS + EDUCATION SHARED DESIGN ——— */
+/* ——— SKILLS + EDUCATION SHARED ——— */
 .skills-section {
     background: linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
-    padding: 40px 32px;
-    border-radius: 14px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding: 32px 26px;
+    border-radius: 12px;
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
 }
 .skill-block {
     border: 1px solid var(--border-soft);
-    border-left: 6px solid var(--accent);
-    border-radius: 12px;
-    padding: 26px 26px 30px;
-    background: #ffffff;
-    font-size: 16px;
+    border-left: 5px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 20px 22px;
+    background: #fff;
+    font-size: 14px;
     transition: 0.25s ease;
 }
 .skill-block:hover {
     background: #f2f7ff;
-    transform: translateX(4px);
+    transform: translateX(3px);
 }
 .icon-circle {
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background: rgba(0,0,0,0.06);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 .icon-circle svg {
-    width: 22px;
-    height: 22px;
+    width: 17px;
+    height: 17px;
     stroke-width: 2;
     stroke: var(--accent);
 }
 
-/* ——— PROJECT CARDS ——— */
+/* ——— PROJECT CARDS (unchanged) ——— */
 .project-card {
     border: 1px solid var(--border-soft);
     border-radius: 14px;
@@ -222,34 +220,34 @@ h2 {
     box-shadow: 0px 4px 14px rgba(0,0,0,0.18);
 }
 
-/* ——— REFLECTION QUOTE BOX ——— */
+/* ——— REFLECTION ——— */
 .quote-box {
-    font-size: 22px;
+    font-size: 18px;
     font-style: italic;
     color: #003366;
     text-align: center;
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 28px 34px;
-    border-left: 4px solid #003366;
-    border-right: 4px solid #003366;
+    max-width: 750px;
+    margin: 32px auto;
+    padding: 20px 26px;
+    border-left: 3px solid #003366;
+    border-right: 3px solid #003366;
     background: #f7faff;
-    border-radius: 10px;
-    line-height: 1.65;
-    box-shadow: 0px 4px 14px rgba(0,0,0,0.10);
+    border-radius: 8px;
+    line-height: 1.55;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
 }
 
-/* ——— CONTACT ICONS ——— */
+/* ——— CONTACT ——— */
 .contact-row {
     display: flex;
     align-items: center;
     gap: 10px;
     margin: 8px 0;
-    font-size: 17px;
+    font-size: 15px;
 }
 .contact-row svg {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     stroke: var(--accent);
     stroke-width: 2;
 }
@@ -283,14 +281,14 @@ h2 {
     I’m a graduate student in Syracuse University’s MS in Applied Data Science program at the iSchool. My work spans Python and SQL, dbt transformation modeling, NoSQL storage, and machine learning classification. I’m pursuing data engineering or analytics engineering roles where I can build reliable pipelines, clean data models, and reporting layers that support real decision‑making across teams and evolving business needs.
 </p>
 
-<!-- ——— EDUCATION (ENHANCED DESIGN) ——— -->
-<div class="skills-section" id="education" style="margin-top: 60px;">
+<!-- ——— EDUCATION (UPDATED + SMALLER) ——— -->
+<div class="skills-section" id="education">
     <h2>Education</h2>
 
     <div class="skills-grid">
 
         <!-- Degree -->
-        <div class="skill-block prog">
+        <div class="skill-block">
             <div class="icon-circle">
                 <svg fill="none" stroke="var(--prog)" viewBox="0 0 24 24">
                     <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
@@ -303,7 +301,7 @@ h2 {
         </div>
 
         <!-- Institution -->
-        <div class="skill-block viz">
+        <div class="skill-block">
             <div class="icon-circle">
                 <svg fill="none" stroke="var(--viz)" viewBox="0 0 24 24">
                     <path d="M3 7l9-4 9 4-9 4-9-4z"></path>
@@ -316,7 +314,7 @@ h2 {
         </div>
 
         <!-- Graduation -->
-        <div class="skill-block cloud">
+        <div class="skill-block">
             <div class="icon-circle">
                 <svg fill="none" stroke="var(--cloud)" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="10"></circle>
@@ -328,7 +326,7 @@ h2 {
         </div>
 
         <!-- Coursework -->
-        <div class="skill-block etl">
+        <div class="skill-block">
             <div class="icon-circle">
                 <svg fill="none" stroke="var(--etl)" viewBox="0 0 24 24">
                     <path d="M4 6h16"></path>
@@ -342,20 +340,20 @@ h2 {
 
     </div>
 
-    <p style="margin-top: 22px; color: var(--text-muted); font-size: 16px;">
+    <p style="margin-top: 18px; color: var(--text-muted); font-size: 14px;">
         My graduate work emphasized end‑to‑end data engineering, analytical modeling, and scalable storage design. 
         I focused on building pipelines, dimensional models, and machine learning workflows that support real‑world 
         reporting and operational needs across diverse data environments.
     </p>
 </div>
 
-<!-- ——— SKILLS ——— -->
+<!-- ——— SKILLS (UPDATED + SMALLER) ——— -->
 <div class="skills-section">
     <h2 id="skills">Technical Skills</h2>
 
     <div class="skills-grid">
 
-        <div class="skill-block prog">
+        <div class="skill-block">
             <div class="icon-circle">
                 <svg fill="none" stroke="var(--prog)" viewBox="0 0 24 24">
                     <polyline points="16 18 22 12 16 6"></polyline>
@@ -366,7 +364,7 @@ h2 {
             Python (pandas, NumPy, scikit‑learn), SQL (analytical queries, joins, optimization)
         </div>
 
-        <div class="skill-block viz">
+        <div class="skill-block">
             <div class="icon-circle">
                 <svg fill="none" stroke="var(--viz)" viewBox="0 0 24 24">
                     <line x1="12" y1="20" x2="12" y2="10"></line>
@@ -378,7 +376,7 @@ h2 {
             Tableau & Power BI dashboards, DAX, interactive reporting, KPI design
         </div>
 
-        <div class="skill-block cloud">
+        <div class="skill-block">
             <div class="icon-circle">
                 <svg fill="none" stroke="var(--cloud)" viewBox="0 0 24 24">
                     <path d="M20 17.58A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 4 16.25"></path>
@@ -388,7 +386,7 @@ h2 {
             AWS (S3, Glue), Snowflake, Microsoft Fabric
         </div>
 
-        <div class="skill-block etl">
+        <div class="skill-block">
             <div class="icon-circle">
                 <svg fill="none" stroke="var(--etl)" viewBox="0 0 24 24">
                     <line x1="4" y1="21" x2="4" y2="14"></line>
@@ -406,7 +404,7 @@ h2 {
             dbt modeling, SSIS pipelines, data quality checks, schema design
         </div>
 
-        <div class="skill-block design">
+        <div class="skill-block">
             <div class="icon-circle">
                 <svg fill="none" stroke="var(--design)" viewBox="0 0 24 24">
                     <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -468,7 +466,7 @@ h2 {
         <h3>Classifying Math Misconceptions with LDA</h3>
     </div>
 
-    <p class="project-meta">NLP • TF‑IDF • LDA</p>
+    <p class="project-meta">NNLP • TF‑IDF • LDA</p>
 
     <div class="skill-tags">
         <span class="tag">Python</span>
@@ -590,7 +588,7 @@ h2 {
 </div>
 
 <!-- ——— FOOTER ——— -->
-<p style="text-align:center; margin-top:60px; color:#777;">
+<p style="text-align:center; margin-top:50px; color:#777;">
     © 2026 Unur Gantulga — Applied Data Science Portfolio
 </p>
 
