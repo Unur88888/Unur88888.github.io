@@ -15,7 +15,6 @@
         --bg-quote: #f4f8ff;
         --border-soft: #e5e5e5;
 
-        /* Category Colors */
         --prog: #003366;
         --viz: #006b8f;
         --cloud: #1e88e5;
@@ -32,14 +31,12 @@
 
     body {
         margin: 0;
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-family: "Inter", sans-serif;
         background: var(--bg-main);
         color: var(--text-main);
         line-height: 1.85;
         font-size: 17px;
-        hyphens: auto;
         text-align: justify;
-        text-justify: inter-word;
     }
 
     nav {
@@ -109,7 +106,6 @@
         font-size: 16px;
     }
 
-    /* Gradient background for Skills section */
     .skills-section {
         background: linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
         padding: 40px 32px;
@@ -132,15 +128,12 @@
         background: #ffffff;
         font-size: 16px;
         transition: 0.25s ease;
-        position: relative;
     }
-
     .skill-block:hover {
         background: #f2f7ff;
         transform: translateX(4px);
     }
 
-    /* Icon circle */
     .icon-circle {
         width: 42px;
         height: 42px;
@@ -151,24 +144,6 @@
         justify-content: center;
         margin-bottom: 12px;
     }
-
-    /* Category-specific colors */
-    .prog { border-left-color: var(--prog); }
-    .prog .icon-circle { background: rgba(0,51,102,0.12); }
-
-    .viz { border-left-color: var(--viz); }
-    .viz .icon-circle { background: rgba(0,107,143,0.12); }
-
-    .cloud { border-left-color: var(--cloud); }
-    .cloud .icon-circle { background: rgba(30,136,229,0.12); }
-
-    .etl { border-left-color: var(--etl); }
-    .etl .icon-circle { background: rgba(57,73,171,0.12); }
-
-    .design { border-left-color: var(--design); }
-    .design .icon-circle { background: rgba(84,110,122,0.12); }
-
-    /* Feather icon styling */
     .icon-circle svg {
         width: 22px;
         height: 22px;
@@ -176,7 +151,12 @@
         stroke: var(--accent);
     }
 
-    /* PREMIUM PROJECT CARD DESIGN */
+    .prog { border-left-color: var(--prog); }
+    .viz { border-left-color: var(--viz); }
+    .cloud { border-left-color: var(--cloud); }
+    .etl { border-left-color: var(--etl); }
+    .design { border-left-color: var(--design); }
+
     .project-card {
         border: 1px solid var(--border-soft);
         border-radius: 14px;
@@ -256,21 +236,9 @@
         border: 1px solid #ddd;
         box-shadow: 0px 4px 14px rgba(0,0,0,0.18);
     }
-
-    .github-btn {
-        display: inline-block;
-        margin-top: 26px;
-        padding: 10px 18px;
-        background: var(--accent);
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-size: 15px;
-        font-weight: 500;
-    }
-    .github-btn:hover { background: var(--accent-light); }
 </style>
 </head>
+
 <body>
 
 <nav>
@@ -288,12 +256,12 @@
         <img src="images/yourphoto.png" alt="Unur Gantulga">
         <h1>Unur Gantulga</h1>
         <p>MS in Applied Data Science • Syracuse University, iSchool</p>
-        <p>Applied Data Science Portfolio (IST782) • May 2026</p>
+        <p>Applied Data Science Portfolio • May 2026</p>
     </div>
 
     <h2 id="intro">Introduction / Personal Statement</h2>
     <p>
-        I’m a graduate student in Syracuse University’s MS in Applied Data Science program at the iSchool. When I began, I underestimated how big the jump would be from curiosity to working with real, messy datasets. This program helped me bridge that gap and develop the technical foundation I rely on today. My work now spans Python and SQL, dbt transformation modeling, NoSQL storage, and machine learning classification, and I’m pursuing data engineering or analytics engineering roles where I can build reliable pipelines, clean data models, and reporting layers that support real decision‑making across teams, projects, and evolving business needs in fast‑moving environments.
+        I’m a graduate student in Syracuse University’s MS in Applied Data Science program at the iSchool. My work spans Python and SQL, dbt transformation modeling, NoSQL storage, and machine learning classification. I’m pursuing data engineering or analytics engineering roles where I can build reliable pipelines, clean data models, and reporting layers that support real decision‑making across teams and evolving business needs.
     </p>
 
     <h2 id="education">Education</h2>
@@ -304,13 +272,11 @@
         <div><strong>Relevant Coursework:</strong> IST652, IST707, IST722, IST769</div>
     </div>
 
-    <!-- SKILLS SECTION -->
     <div class="skills-section">
         <h2 id="skills">Technical Skills</h2>
 
         <div class="skills-grid">
 
-            <!-- Programming -->
             <div class="skill-block prog">
                 <div class="icon-circle">
                     <svg fill="none" stroke="var(--prog)" viewBox="0 0 24 24">
@@ -322,7 +288,6 @@
                 Python (pandas, NumPy, scikit‑learn), SQL (analytical queries, joins, optimization)
             </div>
 
-            <!-- Visualization -->
             <div class="skill-block viz">
                 <div class="icon-circle">
                     <svg fill="none" stroke="var(--viz)" viewBox="0 0 24 24">
@@ -335,7 +300,6 @@
                 Tableau & Power BI dashboards, DAX, interactive reporting, KPI design
             </div>
 
-            <!-- Cloud -->
             <div class="skill-block cloud">
                 <div class="icon-circle">
                     <svg fill="none" stroke="var(--cloud)" viewBox="0 0 24 24">
@@ -343,10 +307,9 @@
                     </svg>
                 </div>
                 <strong>Cloud & Warehousing</strong><br>
-                AWS (S3, Glue), Snowflake (warehousing, performance tuning), Microsoft Fabric
+                AWS (S3, Glue), Snowflake, Microsoft Fabric
             </div>
 
-            <!-- ETL -->
             <div class="skill-block etl">
                 <div class="icon-circle">
                     <svg fill="none" stroke="var(--etl)" viewBox="0 0 24 24">
@@ -362,10 +325,9 @@
                     </svg>
                 </div>
                 <strong>ETL / Data Engineering</strong><br>
-                dbt modeling, SSIS pipelines, data quality checks, schema design, orchestration
+                dbt modeling, SSIS pipelines, data quality checks, schema design
             </div>
 
-            <!-- Data Design -->
             <div class="skill-block design">
                 <div class="icon-circle">
                     <svg fill="none" stroke="var(--design)" viewBox="0 0 24 24">
@@ -375,157 +337,159 @@
                     </svg>
                 </div>
                 <strong>Data Design</strong><br>
-                Dimensional modeling, data governance, BI layer design, metadata management
+                Dimensional modeling, data governance, BI layer design
             </div>
 
         </div>
     </div>
 
-    <!-- PROJECTS SECTION -->
     <h2 id="projects">Projects</h2>
-
-    <!-- PROJECT 3 -->
-    <div class="project-card">
-        <div class="project-header">
-            <div class="project-icon">
-                <svg fill="none" stroke="var(--accent)" viewBox="0 0 24 24">
-                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                    <path d="M3 5v6c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
-                    <path d="M3 11v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6"></path>
-                </svg>
-            </div>
-            <h3>Fudgemart, Inc. Data Warehouse</h3>
+<!-- PROJECT 1 -->
+<div class="project-card">
+    <div class="project-header">
+        <div class="project-icon">
+            <svg fill="none" stroke="var(--accent)" viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
         </div>
-
-        <p class="project-meta">IST722 • Snowflake, dbt, Power BI</p>
-
-        <div class="skill-tags">
-            <span class="tag">Snowflake</span>
-            <span class="tag">dbt</span>
-            <span class="tag">SQL</span>
-            <span class="tag">Data Modeling</span>
-            <span class="tag">ELT Pipelines</span>
-            <span class="tag">Power BI</span>
-        </div>
-
-        <p>
-            As the data engineer on a team building a Snowflake warehouse for a merged retail‑and‑streaming company, I designed dbt models that unified two different schemas into a single dimensional structure. The challenge was treating streaming subscriptions as products so they could coexist with retail orders in the same fact table. I built the transformation logic, validated dimensional tables, and ensured consistent keys across both systems. The final warehouse powered a Power BI dashboard showing unified sales and subscription trends. This project strengthened my understanding of schema design, ELT pipelines, and the importance of building transformations that downstream analysts can trust across diverse reporting needs and business workflows.
-        </p>
-
-        <div class="fig-grid">
-            <div><img src="images/fig7.png" alt="Figure 7"></div>
-            <div><img src="images/fig8.png" alt="Figure 8"></div>
-            <div><img src="images/fig9.png" alt="Figure 9"></div>
-        </div>
-
-        <a class="github-btn" href="https://github.com/Unur88888/IST722-fudgemart-dbt" target="_blank">View on GitHub</a>
+        <h3>Used Car Listings & Consumer Sentiment Analysis</h3>
     </div>
 
-    <!-- PROJECT 4 -->
-    <div class="project-card">
-        <div class="project-header">
-            <div class="project-icon">
-                <svg fill="none" stroke="var(--accent)" viewBox="0 0 24 24">
-                    <path d="M20 17.58A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 4 16.25"></path>
-                </svg>
-            </div>
-            <h3>NYC Transit & Delay Data Pipeline</h3>
-        </div>
+    <p class="project-meta">Python • APIs • Sentiment Analysis</p>
 
-        <p class="project-meta">IST769 • MongoDB, Elasticsearch</p>
-
-        <div class="skill-tags">
-            <span class="tag">Python</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">Elasticsearch</span>
-            <span class="tag">Big Data</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Geospatial Search</span>
-            <span class="tag">Data Engineering</span>
-        </div>
-
-        <p>
-            This project focused on large‑scale data ingestion and storage design using GTFS subway data and historical MTA delay reports. I loaded millions of records into MongoDB, using mongoimport for the 7.4M‑row stop_times table when Jupyter became too slow. I then configured Elasticsearch to support geospatial queries on subway stop locations — a use case MongoDB alone didn’t handle efficiently. The project showed me how different storage systems complement each other and pushed me to work beyond notebook‑based workflows. It was a practical introduction to big‑data engineering, Docker‑based tooling, and geospatial indexing for real‑world transit analysis and operational insight generation.
-        </p>
-
-        <div class="fig-grid">
-            <div><img src="images/fig10.png" alt="Figure 10"></div>
-            <div><img src="images/fig11.png" alt="Figure 11"></div>
-        </div>
-
-        <a class="github-btn" href="https://github.com/Unur88888/IST769-nyc-transit-pipeline" target="_blank">View on GitHub</a>
+    <div class="skill-tags">
+        <span class="tag">Python</span>
+        <span class="tag">APIs</span>
+        <span class="tag">NLP</span>
+        <span class="tag">VADER</span>
+        <span class="tag">Data Cleaning</span>
     </div>
 
-    <!-- REFLECTION -->
-    <h2 id="reflection">Reflection</h2>
+    <p>
+        I built a data pipeline that merged EPA fuel‑economy data with NHTSA recall complaint summaries to explore how consumer sentiment relates to vehicle characteristics. The workflow required pulling two public datasets that used inconsistent naming conventions, so I wrote Python scripts to query the NHTSA and VPIC APIs, corrected model‑name mismatches, and created a composite key that allowed sentiment scores to join cleanly with vehicle specs. After applying VADER to each complaint summary, I aggregated results by brand, model, and year to evaluate patterns across the combined dataset. The analysis showed almost no relationship between sentiment and MPG, but lower‑efficiency vehicles generated more complaints overall. The project strengthened my ability to engineer pipelines around messy external data sources and reinforced how much applied analytics depends on reliable normalization rather than the modeling step itself.
+    </p>
 
-    <blockquote style="
-        background: var(--bg-quote);
-        padding: 28px 32px;
-        border-left: 4px solid var(--accent);
-        border-radius: 8px;
-        font-size: 20px;
-        line-height: 1.7;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        font-weight: 400;
-    ">
-        “When I started this program, I thought the hard part would be learning the tools. It turned out the tools were the easy part. The real challenge was learning to ask better questions — the kind that lead to meaningful insights, stronger models, and clearer decisions across every project I take on.”
-    </blockquote>
-
-    <!-- CONTACT -->
-    <h2 id="contact">Contact</h2>
-
-    <div style="
-        border: 1px solid var(--border-soft);
-        background: var(--bg-soft);
-        padding: 26px 30px;
-        border-radius: 10px;
-        font-size: 17px;
-        line-height: 1.7;
-        text-align: justify;
-    ">
-        <p><a href="mailto:unurgantulga@gmail.com">📧 Email: unurgantulga@gmail.com</a></p>
-        <p><a href="https://github.com/Unur88888" target="_blank">💻 GitHub: github.com/Unur88888</a></p>
+    <div class="fig-grid">
+        <div><img src="images/fig1.png" alt=""></div>
+        <div><img src="images/fig2.png" alt=""></div>
+        <div><img src="images/fig3.png" alt=""></div>
     </div>
-
-    <footer style="
-        text-align: center;
-        margin-top: 60px;
-        font-size: 16px;
-        color: var(--text-muted);
-    ">
-        © 2026 Unur Gantulga — Applied Data Science Portfolio
-    </footer>
-
 </div>
 
-<!-- SCROLL TO TOP BUTTON -->
-<button id="scrollTopBtn" title="Back to top" style="
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: var(--accent);
-    color: white;
-    border: none;
-    padding: 12px 16px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    display: none;
-">↑</button>
+<!-- PROJECT 2 -->
+<div class="project-card">
+    <div class="project-header">
+        <div class="project-icon">
+            <svg fill="none" stroke="var(--accent)" viewBox="0 0 24 24">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M4 4.5A2.5 2.5 0 0 1 6.5 7H20"></path>
+                <path d="M6.5 7v10"></path>
+            </svg>
+        </div>
+        <h3>Classifying Math Misconceptions with LDA</h3>
+    </div>
 
-<script>
-    const scrollBtn = document.getElementById('scrollTopBtn');
+    <p class="project-meta">NLP • TF‑IDF • LDA</p>
 
-    window.addEventListener('scroll', () => {
-        scrollBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
-    });
+    <div class="skill-tags">
+        <span class="tag">Python</span>
+        <span class="tag">TF-IDF</span>
+        <span class="tag">Logistic Regression</span>
+        <span class="tag">Linear SVM</span>
+        <span class="tag">LDA</span>
+    </div>
 
-    scrollBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-</script>
+    <p>
+        I worked on a text‑classification pipeline that analyzed student explanations of math problems and assigned them to one of 35 misconception categories. I built the preprocessing and TF‑IDF vectorization steps, then trained a hybrid ensemble using Logistic Regression and Linear SVM to handle the wide variation in writing styles and class imbalance across categories. Alongside the supervised model, I implemented an LDA workflow to uncover latent themes without relying on labels, comparing how well the discovered clusters aligned with known misconception patterns. The supervised model performed strongly on well‑represented categories, while LDA revealed interpretable reasoning patterns that accuracy alone didn’t capture. This project sharpened my understanding of evaluating NLP models in contexts where interpretability matters as much as predictive performance.
+    </p>
+
+    <div class="fig-grid">
+        <div><img src="images/fig4.png" alt=""></div>
+        <div><img src="images/fig5.png" alt=""></div>
+        <div><img src="images/fig6.png" alt=""></div>
+    </div>
+</div>
+<!-- PROJECT 3 -->
+<div class="project-card">
+    <div class="project-header">
+        <div class="project-icon">
+            <svg fill="none" stroke="var(--accent)" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <path d="M3 9h18"></path>
+            </svg>
+        </div>
+        <h3>Fudgemart, Inc. Data Warehouse</h3>
+    </div>
+
+    <p class="project-meta">Snowflake • dbt • Power BI</p>
+
+    <div class="skill-tags">
+        <span class="tag">Snowflake</span>
+        <span class="tag">dbt</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Data Modeling</span>
+        <span class="tag">ETL</span>
+    </div>
+
+    <p>
+        As the data engineer on a team building a Snowflake warehouse for a merged retail‑and‑streaming company, I designed dbt models that unified two different schemas into a single dimensional structure. The challenge was treating streaming subscriptions as products so they could coexist with retail orders in the same fact table. I built the transformation logic, validated dimensional tables, and ensured consistent keys across both systems. The final warehouse powered a Power BI dashboard showing unified sales and subscription trends. This project strengthened my understanding of schema design, ELT pipelines, and the importance of building transformations that downstream analysts can trust across diverse reporting needs and business workflows.
+    </p>
+
+    <div class="fig-grid">
+        <div><img src="images/fig7.png" alt=""></div>
+        <div><img src="images/fig8.png" alt=""></div>
+        <div><img src="images/fig9.png" alt=""></div>
+    </div>
+</div>
+
+<!-- PROJECT 4 -->
+<div class="project-card">
+    <div class="project-header">
+        <div class="project-icon">
+            <svg fill="none" stroke="var(--accent)" viewBox="0 0 24 24">
+                <path d="M3 3h18v18H3z"></path>
+                <path d="M3 9h18"></path>
+                <path d="M9 21V9"></path>
+            </svg>
+        </div>
+        <h3>NYC Transit & Delay Data Pipeline</h3>
+    </div>
+
+    <p class="project-meta">Python • MongoDB • Elasticsearch</p>
+
+    <div class="skill-tags">
+        <span class="tag">Python</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">Elasticsearch</span>
+        <span class="tag">Data Engineering</span>
+        <span class="tag">NoSQL</span>
+    </div>
+
+    <p>
+        I engineered a large‑scale data pipeline that ingested NYC subway GTFS data and historical MTA delay reports into MongoDB, then configured Elasticsearch to support geospatial search on subway stop locations. The stop_times table contained over 7.4 million rows, which required moving outside Jupyter and using mongoimport inside Docker to load efficiently. MongoDB handled structured document storage while Elasticsearch powered fast geospatial queries, each serving different access patterns within the same pipeline. This project strengthened my ability to work with scale constraints, containerized environments, and multi‑system storage design.
+    </p>
+
+    <div class="fig-grid">
+        <div><img src="images/fig10.png" alt=""></div>
+        <div><img src="images/fig11.png" alt=""></div>
+    </div>
+</div>
+
+<!-- REFLECTION -->
+<h2 id="reflection">Conclusion / Reflection</h2>
+<p>
+    Across these projects, I learned that the hardest part of data work is rarely the modeling — it’s the decisions made before and after the model. In some cases, I spent more time fixing data than analyzing it. In others, I realized accuracy wasn’t the only metric that mattered. Working with pipelines, warehouses, and large‑scale storage systems taught me how important it is to build things that other people can rely on. I’m leaving this program more confident in my ability to design data workflows end‑to‑end and more aware of how much there still is to learn. But I’m ready for the next step.
+</p>
+
+<!-- CONTACT -->
+<h2 id="contact">Contact</h2>
+<p>
+    Feel free to reach out — I’m always open to discussing data engineering, analytics engineering, or new opportunities.
+</p>
+<p><strong>Email:</strong> your.email@domain.com</p>
+<p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+
+</div> <!-- end wrapper -->
 
 </body>
 </html>
