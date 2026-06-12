@@ -104,16 +104,7 @@ h2 {
     color: var(--accent);
 }
 
-/* ——— EDUCATION TABLE ——— */
-.info-table {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 10px 24px;
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-
-/* ——— SKILLS ——— */
+/* ——— SKILLS + EDUCATION SHARED DESIGN ——— */
 .skills-section {
     background: linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
     padding: 40px 32px;
@@ -231,13 +222,36 @@ h2 {
     box-shadow: 0px 4px 14px rgba(0,0,0,0.18);
 }
 
-/* ——— CONTACT ——— */
-.contact-icon {
+/* ——— REFLECTION QUOTE BOX ——— */
+.quote-box {
+    font-size: 22px;
+    font-style: italic;
+    color: #003366;
+    text-align: center;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 28px 34px;
+    border-left: 4px solid #003366;
+    border-right: 4px solid #003366;
+    background: #f7faff;
+    border-radius: 10px;
+    line-height: 1.65;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.10);
+}
+
+/* ——— CONTACT ICONS ——— */
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+    font-size: 17px;
+}
+.contact-row svg {
     width: 22px;
     height: 22px;
     stroke: var(--accent);
-    margin-right: 8px;
-    vertical-align: middle;
+    stroke-width: 2;
 }
 </style>
 </head>
@@ -269,18 +283,71 @@ h2 {
     I’m a graduate student in Syracuse University’s MS in Applied Data Science program at the iSchool. My work spans Python and SQL, dbt transformation modeling, NoSQL storage, and machine learning classification. I’m pursuing data engineering or analytics engineering roles where I can build reliable pipelines, clean data models, and reporting layers that support real decision‑making across teams and evolving business needs.
 </p>
 
-<!-- ——— EDUCATION (ENHANCED) ——— -->
-<h2 id="education">Education</h2>
-<div class="info-table">
-    <div><strong>Degree:</strong> Master of Science in Applied Data Science</div>
-    <div><strong>Institution:</strong> Syracuse University, School of Information Studies (iSchool)</div>
-    <div><strong>Expected Graduation:</strong> May 2026</div>
-    <div><strong>Relevant Coursework:</strong> Scripting for Data Analysis, Applied Machine Learning, Data Warehouse, Advanced Big Data Management</div>
-</div>
+<!-- ——— EDUCATION (ENHANCED DESIGN) ——— -->
+<div class="skills-section" id="education" style="margin-top: 60px;">
+    <h2>Education</h2>
 
-<p style="margin-top: 10px; color: var(--text-muted);">
-    My graduate work emphasized end‑to‑end data engineering, analytical modeling, and scalable storage design. Across the curriculum, I focused on building pipelines, dimensional models, and machine learning workflows that support real‑world reporting and operational needs.
-</p>
+    <div class="skills-grid">
+
+        <!-- Degree -->
+        <div class="skill-block prog">
+            <div class="icon-circle">
+                <svg fill="none" stroke="var(--prog)" viewBox="0 0 24 24">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                    <path d="M12 14v7"></path>
+                    <path d="M5 12v5c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-5"></path>
+                </svg>
+            </div>
+            <strong>Degree</strong><br>
+            Master of Science in Applied Data Science
+        </div>
+
+        <!-- Institution -->
+        <div class="skill-block viz">
+            <div class="icon-circle">
+                <svg fill="none" stroke="var(--viz)" viewBox="0 0 24 24">
+                    <path d="M3 7l9-4 9 4-9 4-9-4z"></path>
+                    <path d="M21 10l-9 4-9-4"></path>
+                    <path d="M3 14l9 4 9-4"></path>
+                </svg>
+            </div>
+            <strong>Institution</strong><br>
+            Syracuse University — School of Information Studies (iSchool)
+        </div>
+
+        <!-- Graduation -->
+        <div class="skill-block cloud">
+            <div class="icon-circle">
+                <svg fill="none" stroke="var(--cloud)" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+            </div>
+            <strong>Expected Graduation</strong><br>
+            May 2026
+        </div>
+
+        <!-- Coursework -->
+        <div class="skill-block etl">
+            <div class="icon-circle">
+                <svg fill="none" stroke="var(--etl)" viewBox="0 0 24 24">
+                    <path d="M4 6h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 18h16"></path>
+                </svg>
+            </div>
+            <strong>Relevant Coursework</strong><br>
+            IST652 • IST707 • IST722 • IST769
+        </div>
+
+    </div>
+
+    <p style="margin-top: 22px; color: var(--text-muted); font-size: 16px;">
+        My graduate work emphasized end‑to‑end data engineering, analytical modeling, and scalable storage design. 
+        I focused on building pipelines, dimensional models, and machine learning workflows that support real‑world 
+        reporting and operational needs across diverse data environments.
+    </p>
+</div>
 
 <!-- ——— SKILLS ——— -->
 <div class="skills-section">
@@ -353,7 +420,6 @@ h2 {
 
     </div>
 </div>
-
 <!-- ——— PROJECTS ——— -->
 <h2 id="projects">Projects</h2>
 
@@ -413,8 +479,7 @@ h2 {
     </div>
 
     <p>
-        I worked on a text‑classification pipeline that analyzed student explanations of math problems and assigned them to one of 35 misconception categories. I built the preprocessing and TF‑IDF vectorization steps, then trained a hybrid ensemble using Logistic Regression and Linear SVM to handle the wide variation in writing styles and class imbalance across categories. Alongside the supervised model, I implemented an LDA workflow to uncover latent themes
-                without relying on labels, comparing how well the discovered clusters aligned with known misconception patterns. The supervised model performed strongly on well‑represented categories, while LDA revealed interpretable reasoning patterns that accuracy alone didn’t capture. This project sharpened my understanding of evaluating NLP models in contexts where interpretability matters as much as predictive performance.
+        I worked on a text‑classification pipeline that analyzed student explanations of math problems and assigned them to one of 35 misconception categories. I built the preprocessing and TF‑IDF vectorization steps, then trained a hybrid ensemble using Logistic Regression and Linear SVM to handle the wide variation in writing styles and class imbalance across categories. Alongside the supervised model, I implemented an LDA workflow to uncover latent themes without relying on labels, comparing how well the discovered clusters aligned with known misconception patterns. The supervised model performed strongly on well‑represented categories, while LDA revealed interpretable reasoning patterns that accuracy alone didn’t capture. This project sharpened my understanding of evaluating NLP models in contexts where interpretability matters as much as predictive performance.
     </p>
 
     <div class="fig-grid">
@@ -424,7 +489,7 @@ h2 {
     </div>
 </div>
 
-<!-- PROJECT 3 -->
+<!-- ——— PROJECT 3 ——— -->
 <div class="project-card">
     <div class="project-header">
         <div class="project-icon">
@@ -457,7 +522,7 @@ h2 {
     </div>
 </div>
 
-<!-- PROJECT 4 -->
+<!-- ——— PROJECT 4 ——— -->
 <div class="project-card">
     <div class="project-header">
         <div class="project-icon">
@@ -489,20 +554,44 @@ h2 {
         <div><img src="images/fig11.png" alt=""></div>
     </div>
 </div>
+<!-- ——— REFLECTION ——— -->
+<h2 id="reflection">Reflection</h2>
 
-<!-- REFLECTION -->
-<h2 id="reflection">Conclusion / Reflection</h2>
-<p>
-    Across these projects, I learned that the hardest part of data work is rarely the modeling — it’s the decisions made before and after the model. In some cases, I spent more time fixing data than analyzing it. In others, I realized accuracy wasn’t the only metric that mattered. Working with pipelines, warehouses, and large‑scale storage systems taught me how important it is to build things that other people can rely on. I’m leaving this program more confident in my ability to design data workflows end‑to‑end and more aware of how much there still is to learn. But I’m ready for the next step.
-</p>
+<div class="reflection">
+    <blockquote class="quote-box">
+        “When I started this program, I thought the hard part would be learning the tools. 
+        It turned out the tools were the easy part. The real challenge was learning to ask better questions — 
+        the kind that lead to meaningful insights, stronger models, and clearer decisions across every project I take on.”
+    </blockquote>
+</div>
 
-<!-- CONTACT -->
+<!-- ——— CONTACT ——— -->
 <h2 id="contact">Contact</h2>
-<p>
-    Feel free to reach out — I’m always open to discussing data engineering, analytics engineering, or new opportunities.
+
+<div class="contact-row">
+    <svg fill="none" stroke="var(--accent)" viewBox="0 0 24 24">
+        <path d="M4 4h16v16H4z"></path>
+        <polyline points="4 4 12 12 20 4"></polyline>
+    </svg>
+    <a href="mailto:unurgantulga@gmail.com" style="color: var(--accent); text-decoration: none;">
+        unurgantulga@gmail.com
+    </a>
+</div>
+
+<div class="contact-row">
+    <svg fill="none" stroke="var(--accent)" viewBox="0 0 24 24">
+        <path d="M16 8a6 6 0 1 0-8 0"></path>
+        <circle cx="12" cy="14" r="6"></circle>
+    </svg>
+    <a href="https://github.com/Unur88888" target="_blank" style="color: var(--accent); text-decoration: none;">
+        github.com/Unur88888
+    </a>
+</div>
+
+<!-- ——— FOOTER ——— -->
+<p style="text-align:center; margin-top:60px; color:#777;">
+    © 2026 Unur Gantulga — Applied Data Science Portfolio
 </p>
-<p><strong>Email:</strong> your.email@domain.com</p>
-<p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
 
 </div> <!-- end wrapper -->
 
